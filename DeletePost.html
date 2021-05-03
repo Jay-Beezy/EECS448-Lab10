@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="myStyle.css">
+    <title>Delete post!</title>
+  </head>
+  <body>
+    <h1>Select a post(s) to delete!</h1>
+       <?php
+
+        // Interacting with php
+        $mysqli = new mysqli("mysql.eecs.ku.edu", "jakebeesley", "ap9beeC3", "jakebeesley");
+
+        echo "<form action=\"DeletePost.php\" method=\"post\">";
+        $query = "SELECT post_id, content, author_id FROM Posts";
+
+        if ( $result = $mysqli->query($query)) {
+        echo "<table>";
+        while ($row = $result->fetch_assoc()) {
+         echo "<tr>";
+         echo "<td>POST ID: " .$row['post_id']. " --- </td>";
+         echo "<td>Content: " .$row['content']. " --- </td>";
+         echo "<td>Author: " .$row['author_id']. "</td>";
+         echo "<td><input type='checkbox' id=".$row['post_id']."></td>";
+         echo "</tr>";
+        }
+        echo "</table>";
+
+        // Free result set
+        $result->free();
+       }
+        echo "<h1>~~~~ Didn't have time to figure out how to delete posts in the php file, unfortunately... ~~~~</h1\>";
+        echo "<input type=\"submit\" id=\"button1\">";
+        echo "</form>";
+       ?>
+  </body>
+</html>
+

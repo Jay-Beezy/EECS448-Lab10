@@ -1,0 +1,182 @@
+h1
+{
+    background-color: rgb(228, 59, 59);
+    color: rgb(0, 0, 0);
+    font-family: georgia;
+    text-align: center;
+    font-size: 22pt;
+    height: 5%;
+}
+
+h2
+{
+    background-color: rgb(228, 59, 59);
+    color: rgb(0, 0, 0);
+    font-family: georgia;
+    text-align: center;
+    font-size: 22pt;
+    height: 5%;
+}
+
+h5
+{
+    background-color: rgb(228, 59, 59);
+    color: rgb(0, 0, 0);
+    font-family: georgia;
+    text-align: center;
+    font-size: 22pt;
+    height: 5%;
+}
+
+input
+{
+    font-size: 20pt;
+    width: 50%;
+}
+
+.label1{
+    color: rgb(65, 0, 0);
+    padding: 5px;
+    font-size:22pt;
+}
+
+#inputFields
+{
+    text-align: center;
+    margin-top: 5px;
+}
+
+b
+{
+    font-size: 20pt;
+}
+
+#textEditor
+{
+    border: 2px solid black;
+    border-color: red;
+    background-color: yellow;
+    font-family: georgia;
+    text-align: center;
+    font-size: 22pt;
+}
+
+#submitButton
+{
+    height: 100px;
+    width: 500px;
+    font-family: impact;
+    font-size: 40pt;
+}
+
+body
+{
+    background-color: rgb(255, 209, 209);
+}
+
+p.styleOne
+{
+    background-color: rgb(0, 255, 234);
+    color: rgb(0, 0, 0);
+    font-family: georgia;
+    font-size: 22pt;
+    opacity: 0.8;
+}
+
+p.styleTwo
+{
+    background-color: rgb(0, 174, 255);
+    color: rgb(0, 0, 0);
+    font-family: georgia;
+    font-size: 22pt;
+    text-align: center;
+    opacity: 0.8;
+}
+
+p.styleThree
+{
+    background-color: rgb(0, 255, 234);
+    color: rgb(0, 0, 0);
+    font-family: georgia;
+    font-size: 22pt;
+    text-align: center;
+    opacity: 0.8;
+}
+
+#bodytwo
+{
+    background-image: url("Images/backgroundpicture.JPG");
+    background-size: 100%;
+}
+
+iframe
+{
+    height: 80%; 
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a
+{
+    background-color:rgb(0, 225, 255);
+    color: rgb(0, 0, 0);
+}
+
+a:hover
+{
+    background-color:rgb(0, 0, 0);
+    color: rgb(0, 225, 255);
+}
+
+img.centerPicture
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+li
+{
+    background-color: rgb(0, 225, 255);
+    color: rgb(0, 0, 0);
+    font-family: copperplate, fantasy;
+    font-size: 22pt;
+    opacity: 0.8;
+}
+
+#borderColorRed
+{
+    border:5px solid hsl(0, 100%, 50%);
+}
+
+#homeButton
+{
+    height: 50px; 
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: georgia;
+    font-size: 22pt;
+    color: rgb(255, 255, 255);
+    background-color:rgb(94, 94, 94);
+}
+
+#button1
+{
+    height: 5%; 
+    width: 20%;
+    font-family: georgia;
+    font-size: 22pt;
+    color: rgb(255, 255, 255);
+    background-color:rgb(136, 0, 0);
+}
+
+#homepageText
+{
+    font-family: georgia;
+    font-size: 22pt;
+}

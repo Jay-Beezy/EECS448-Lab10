@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title> View User Posts! </title>
+    <link rel="stylesheet" href="myStyle.css">
+  </head>
+  <body>
+    <h5>User Posts</h5>
+    <form action="ViewUserPosts.php" method="post">
+      <select name="username" id="username">
+        <?php
+
+          // Interacting with php
+          $mysqli = new mysqli("mysql.eecs.ku.edu", "jakebeesley", "ap9beeC3", "jakebeesley");
+
+          // Connection checker
+          if ($mysqli->connect_errno) {
+        printf("Connect failed: %s\n", $mysqli->connect_error);
+        exit();
+        }
+
+        $query = "SELECT user_id FROM Users";
+
+        if ( $result = $mysqli->query($query)) {
+        while ($row = $result->fetch_assoc()) {
+         echo "<option value='" . $row["user_id"] . "'>" .$row["user_id"]."</option>";
+        }
+
+        // Free result set
+        $result->free();
+        }
+
+        // Close the connection
+        $mysqli->close();
+        ?>
+      </select>
+      </br></br>
+      <input type="submit" value="SUBMIT" id="button1">
+    </form>
+    <button onclick="location.href='index.html'" id="homeButton">Home</button>
+  </body>
+</html>
+
